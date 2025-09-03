@@ -1,297 +1,424 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SenojTech - Portfolio</title>
-    <meta name="description" content="Portfolio of JONES Emmanuel Oluwatobi, a Full-Stack Developer passionate about building fast, scalable, and meaningful digital products." />
+    <title>JEOTehnologies
+ - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of JONES Emmanuel Oluwatobi, a Full-Stack Developer passionate about building fast, scalable, and meaningful digital products."
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body class="bg-gray-50 text-gray-800">
+  <body class="bg-gray-50 text-gray-800">
     <!-- Header/Navigation -->
-    <header class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="#home" class="text-2xl font-bold text-gray-800 dark:text-white">
-                    <span class="text-blue-500">Senoj</span>Tech
-                </a>
+    <header
+      class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 shadow-sm"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a
+            href="#home"
+            class="text-2xl font-bold text-gray-800 dark:text-white"
+          >
+            <span class="text-blue-500">JEO</span>Tech
+          </a>
 
-                <div class="flex items-center space-x-6">
-                    <nav class="hidden md:flex space-x-8">
-                        <a href="#home" class="nav-link">Home</a>
-                        <a href="#about" class="nav-link">About</a>
-                        <a href="#skills" class="nav-link">Skills</a>
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <a href="#resume" class="nav-link">Resume</a>
-                        <a href="#blog" class="nav-link">Blog</a>
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </nav>
+          <div class="flex items-center space-x-6">
+            <nav class="hidden md:flex space-x-8">
+              <a href="#home" class="nav-link">Home</a>
+              <a href="#about" class="nav-link">About</a>
+              <a href="#skills" class="nav-link">Skills</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#resume" class="nav-link">Resume</a>
+              <a href="#blog" class="nav-link">Blog</a>
+              <a href="#contact" class="nav-link">Contact</a>
+            </nav>
 
-                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
               <i class="fas fa-moon dark:hidden"></i>
               <i class="fas fa-sun hidden dark:block"></i>
             </button>
 
-                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+            <button
+              id="mobile-menu-button"
+              class="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
               <i class="fas fa-bars"></i>
             </button>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-100 dark:bg-white-800 shadow-lg">
-            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#resume" class="nav-link">Resume</a>
-                <a href="#blog" class="nav-link">Blog</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-100 dark:bg-white-800 shadow-lg"
+      >
+        <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </div>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center pt-20">
-        <div class="container mx-auto px-6 py-20">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-12 md:mb-0 fade-in">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                        Hi, I'm
-                        <span class="text-blue-500">JONES Emmanuel Oluwatobi</span> — a Full-Stack Developer
-                    </h1>
-                    <p class="text-xl text-gray-600 dark:text-gray-500 mb-8">
-                        Bringing ideas to life with clean code, intuitive UX, and efficient backend logic.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#projects" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 shadow-lg">
+      <div class="container mx-auto px-6 py-20">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-12 md:mb-0 fade-in">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Hi, I'm
+              <span class="text-blue-500">JONES Emmanuel Oluwatobi</span> — a
+              Full-Stack Developer
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-500 mb-8">
+              Bringing ideas to life with clean code, intuitive UX, and
+              efficient backend logic.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#projects"
+                class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 shadow-lg"
+              >
                 View My Work
               </a>
-                        <a href="#contact" class="px-6 py-3 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition duration-300">
+              <a
+                href="#contact"
+                class="px-6 py-3 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition duration-300"
+              >
                 Let's Connect
               </a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center fade-in">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-                        <div class="absolute inset-0 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute inset-4 bg-blue-400 rounded-full opacity-20 animate-pulse delay-100"></div>
-                        <div class="absolute inset-8 bg-blue-300 rounded-full opacity-20 animate-pulse delay-200"></div>
-                        <div class="relative w-full h-full flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Developer working" class="w-full h-full object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-xl"
-                            />
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center fade-in">
+            <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <div
+                class="absolute inset-0 bg-blue-500 rounded-full opacity-20 animate-pulse"
+              ></div>
+              <div
+                class="absolute inset-4 bg-blue-400 rounded-full opacity-20 animate-pulse delay-100"
+              ></div>
+              <div
+                class="absolute inset-8 bg-blue-300 rounded-full opacity-20 animate-pulse delay-200"
+              ></div>
+              <div
+                class="relative w-full h-full flex items-center justify-center"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  alt="Developer working"
+                  class="w-full h-full object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-xl"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-100 dark:bg-white-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16">About Me</h2>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">About Me</h2>
 
-            <div class="max-w-4xl mx-auto">
-                <div class="flex flex-col md:flex-row items-center gap-8 mb-12 fade-in">
-                    <div class="md:w-1/3 flex justify-center">
-                        <img src="./images/Senoj CEO.jpg" alt="Jones Emmanuel" class="w-48 h-48 rounded-full object-cover border-4 border-white dark:border-gray-700 shadow-lg" />
-                    </div>
-                    <div class="md:w-2/3">
-                        <p class="mb-4">
-                            I'm a passionate Full-Stack Developer with over 7 years of experience building web applications that solve real-world problems. My journey in tech began when I built my first website at 25, and since then, I've been obsessed with creating digital experiences
-                            that are both functional and beautiful.
-                        </p>
-                        <p class="mb-4">
-                            What drives me is the challenge of turning complex ideas into simple, intuitive interfaces. I believe that great software should not only work well but also delight its users. My approach combines meticulous attention to detail with a focus on performance
-                            and scalability.
-                        </p>
-                        <p class="mb-4">
-                            When I'm not coding, you'll find me contributing to open-source projects, mentoring junior developers, or exploring new technologies. I'm particularly excited about the potential of serverless architectures and progressive web apps to transform how we
-                            build for the web.
-                        </p>
-                        <p>
-                            <span class="font-semibold">Fun fact:</span> I can solve a Rubik's cube in under 2 minutes, which I think reflects my love for solving puzzles—whether they're made of plastic or code!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow text-center">
-                        <div class="text-blue-500 text-3xl mb-2">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3 class="font-bold">Clean Code</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-300">
-                            Readable, maintainable, efficient
-                        </p>
-                    </div>
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow text-center">
-                        <div class="text-blue-500 text-3xl mb-2">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3 class="font-bold">Responsive</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-300">
-                            Works on any device
-                        </p>
-                    </div>
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow text-center">
-                        <div class="text-blue-500 text-3xl mb-2">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3 class="font-bold">Fast</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-300">
-                            Optimized performance
-                        </p>
-                    </div>
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow text-center">
-                        <div class="text-blue-500 text-3xl mb-2">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3 class="font-bold">Scalable</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-300">
-                            Grows with your needs
-                        </p>
-                    </div>
-                </div>
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row items-center gap-8 mb-12 fade-in"
+          >
+            <div class="md:w-1/3 flex justify-center">
+              <img
+                src="./images/JEO CEO.jpg"
+                alt="Jones Emmanuel"
+                class="w-48 h-48 rounded-full object-cover border-4 border-white dark:border-gray-700 shadow-lg"
+              />
             </div>
+            <div class="md:w-2/3">
+              <p class="mb-4">
+                I'm a passionate Full-Stack Developer with over 7 years of
+                experience building web applications that solve real-world
+                problems. My journey in tech began when I built my first website
+                at 25, and since then, I've been obsessed with creating digital
+                experiences that are both functional and beautiful.
+              </p>
+              <p class="mb-4">
+                What drives me is the challenge of turning complex ideas into
+                simple, intuitive interfaces. I believe that great software
+                should not only work well but also delight its users. My
+                approach combines meticulous attention to detail with a focus on
+                performance and scalability.
+              </p>
+              <p class="mb-4">
+                When I'm not coding, you'll find me contributing to open-source
+                projects, mentoring junior developers, or exploring new
+                technologies. I'm particularly excited about the potential of
+                serverless architectures and progressive web apps to transform
+                how we build for the web.
+              </p>
+              <p>
+                <span class="font-semibold">Fun fact:</span> I can solve a
+                Rubik's cube in under 2 minutes, which I think reflects my love
+                for solving puzzles—whether they're made of plastic or code!
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
+            <div
+              class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow text-center"
+            >
+              <div class="text-blue-500 text-3xl mb-2">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="font-bold">Clean Code</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Readable, maintainable, efficient
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow text-center"
+            >
+              <div class="text-blue-500 text-3xl mb-2">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 class="font-bold">Responsive</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Works on any device
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow text-center"
+            >
+              <div class="text-blue-500 text-3xl mb-2">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3 class="font-bold">Fast</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Optimized performance
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow text-center"
+            >
+              <div class="text-blue-500 text-3xl mb-2">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3 class="font-bold">Scalable</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Grows with your needs
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16">My Skills</h2>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">My Skills</h2>
 
-            <div class="max-w-4xl mx-auto">
-                <div class="mb-12 fade-in">
-                    <h3 class="text-xl font-semibold mb-4 flex items-center">
-                        <i class="fas fa-laptop-code text-blue-500 mr-2"></i> Frontend Development
-                    </h3>
-                    <div class="flex flex-wrap gap-3">
-                        <div class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">
-                            HTML5
-                        </div>
-                        <div class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">
-                            CSS3
-                        </div>
-                        <div class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">
-                            JavaScript (ES6+)
-                        </div>
-                        <div class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">
-                            React.js
-                        </div>
-                        <div class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">
-                            Next.js
-                        </div>
-                        <div class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">
-                            Tailwind CSS
-                        </div>
-                        <div class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">
-                            Redux
-                        </div>
-                        <div class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">
-                            TypeScript
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-12 fade-in">
-                    <h3 class="text-xl font-semibold mb-4 flex items-center">
-                        <i class="fas fa-server text-blue-500 mr-2"></i> Backend Development
-                    </h3>
-                    <div class="flex flex-wrap gap-3">
-                        <div class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full">
-                            Node.js
-                        </div>
-                        <div class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full">
-                            Express.js
-                        </div>
-                        <div class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full">
-                            MongoDB
-                        </div>
-                        <div class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full">
-                            PostgreSQL
-                        </div>
-                        <div class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full">
-                            RESTful APIs
-                        </div>
-                        <div class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full">
-                            GraphQL
-                        </div>
-                        <div class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full">
-                            Firebase
-                        </div>
-                        <div class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full">
-                            Docker
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fade-in">
-                    <h3 class="text-xl font-semibold mb-4 flex items-center">
-                        <i class="fas fa-tools text-blue-500 mr-2"></i> Tools & Others
-                    </h3>
-                    <div class="flex flex-wrap gap-3">
-                        <div class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full">
-                            Git
-                        </div>
-                        <div class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full">
-                            GitHub
-                        </div>
-                        <div class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full">
-                            VS Code
-                        </div>
-                        <div class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full">
-                            Postman
-                        </div>
-                        <div class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full">
-                            Figma
-                        </div>
-                        <div class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full">
-                            Agile/Scrum
-                        </div>
-                        <div class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full">
-                            CI/CD
-                        </div>
-                        <div class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full">
-                            AWS Basics
-                        </div>
-                    </div>
-                </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-12 fade-in">
+            <h3 class="text-xl font-semibold mb-4 flex items-center">
+              <i class="fas fa-laptop-code text-blue-500 mr-2"></i> Frontend
+              Development
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <div
+                class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full"
+              >
+                HTML5
+              </div>
+              <div
+                class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full"
+              >
+                CSS3
+              </div>
+              <div
+                class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full"
+              >
+                JavaScript (ES6+)
+              </div>
+              <div
+                class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full"
+              >
+                React.js
+              </div>
+              <div
+                class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full"
+              >
+                Next.js
+              </div>
+              <div
+                class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full"
+              >
+                Tailwind CSS
+              </div>
+              <div
+                class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full"
+              >
+                Redux
+              </div>
+              <div
+                class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full"
+              >
+                TypeScript
+              </div>
             </div>
+          </div>
+
+          <div class="mb-12 fade-in">
+            <h3 class="text-xl font-semibold mb-4 flex items-center">
+              <i class="fas fa-server text-blue-500 mr-2"></i> Backend
+              Development
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <div
+                class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full"
+              >
+                Node.js
+              </div>
+              <div
+                class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full"
+              >
+                Express.js
+              </div>
+              <div
+                class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full"
+              >
+                MongoDB
+              </div>
+              <div
+                class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full"
+              >
+                PostgreSQL
+              </div>
+              <div
+                class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full"
+              >
+                RESTful APIs
+              </div>
+              <div
+                class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full"
+              >
+                GraphQL
+              </div>
+              <div
+                class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full"
+              >
+                Firebase
+              </div>
+              <div
+                class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full"
+              >
+                Docker
+              </div>
+            </div>
+          </div>
+
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold mb-4 flex items-center">
+              <i class="fas fa-tools text-blue-500 mr-2"></i> Tools & Others
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <div
+                class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full"
+              >
+                Git
+              </div>
+              <div
+                class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full"
+              >
+                GitHub
+              </div>
+              <div
+                class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full"
+              >
+                VS Code
+              </div>
+              <div
+                class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full"
+              >
+                Postman
+              </div>
+              <div
+                class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full"
+              >
+                Figma
+              </div>
+              <div
+                class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full"
+              >
+                Agile/Scrum
+              </div>
+              <div
+                class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full"
+              >
+                CI/CD
+              </div>
+              <div
+                class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full"
+              >
+                AWS Basics
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-100 dark:bg-white-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16">Featured Projects</h2>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">Featured Projects</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in">
-                    <div class="h-48 overflow-hidden">
-                        <img src="/images/rbaesthe.png" alt="R&BAesthetics" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">R&BAesthetics Dashboard</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            A mirror sales platform for sustainable products featuring cart functionality, user reviews, and secure payments. Built with Next.js and Stripe integration.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">React</span
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="project-card bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="./images/rb.png"
+                alt="R&BAesthetics"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">R&BAesthetics Dashboard</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                A mirror sales platform for sustainable products featuring cart
+                functionality, user reviews, and secure payments. Built with
+                Next.js and Opay payment gateway.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded"
+                  >React</span
                 >
                 <span
                   class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded"
-                  >Redux</span
+                  >Tailwind</span
                 >
                 <span
                   class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded"
@@ -299,7 +426,7 @@
                 >
                 <span
                   class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded"
-                  >MongoDB</span
+                  >Supabase</span
                 >
               </div>
               <div class="flex space-x-3">
@@ -485,17 +612,15 @@
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                src="./images/haya.png"
                 alt="CodeCollab"
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">CodeCollab</h3>
+              <h3 class="text-xl font-bold mb-2">Health For All Youth Association</h3>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                Real-time collaborative code editor with syntax highlighting,
-                video chat, and project management features for remote developer
-                teams.
+                Developed the brand identity and digital design, crafted a fresh, impactful design for HAYA blending visuals that highlight youth, health, and community empowerment.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
@@ -610,10 +735,15 @@
               >
                 <h3 class="text-xl font-bold mb-4">Download Resume</h3>
                 <a
-                  href="/images/Resume/JONES RESUME.pdf" target="_blank"
+                  href="/images/Resume/JONES RESUME.pdf"
+                  target="_blank"
                   class="block w-full text-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
                 >
-                  <i class="fas fa-download mr-2 btn" download="JONES_RESUME"></i> Download PDF
+                  <i
+                    class="fas fa-download mr-2 btn"
+                    download="JONES_RESUME"
+                  ></i>
+                  Download PDF
                 </a>
               </div>
 
@@ -625,388 +755,510 @@
                   <li class="flex items-center">
                     <i class="fas fa-check text-green-500 mr-2"></i>
                     <span>Full-Stack Development</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                <span>Responsive Web Design</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                <span>API Development</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                <span>Database Design</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                <span>Performance Optimization</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                <span>Agile Methodologies</span>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-2">
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg mb-8 fade-in">
-                        <h3 class="text-xl font-bold mb-6 flex items-center">
-                            <i class="fas fa-briefcase text-blue-500 mr-3"></i> Work Experience
-                        </h3>
-
-                        <div class="border-l-2 border-blue-500 pl-8 relative space-y-8">
-                            <!-- Experience 1 -->
-                            <div class="timeline-item relative">
-                                <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
-                                    <h4 class="font-bold">Senior Full-Stack Developer</h4>
-                                    <p class="text-blue-500">TechSolutions Inc.</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                                        Jan 2021 - Present
-                                    </p>
-                                    <ul class="mt-2 list-disc list-inside text-sm">
-                                        <li>
-                                            Led development of enterprise SaaS platform serving 50,000+ users
-                                        </li>
-                                        <li>
-                                            Architected microservices backend improving performance by 40%
-                                        </li>
-                                        <li>
-                                            Mentored junior developers and conducted code reviews
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Experience 2 -->
-                            <div class="timeline-item relative">
-                                <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
-                                    <h4 class="font-bold">Full-Stack Developer</h4>
-                                    <p class="text-blue-500">DigitalAgency Ltd.</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                                        Mar 2018 - Dec 2020
-                                    </p>
-                                    <ul class="mt-2 list-disc list-inside text-sm">
-                                        <li>
-                                            Developed 30+ client websites and web applications
-                                        </li>
-                                        <li>
-                                            Implemented CI/CD pipelines reducing deployment time by 60%
-                                        </li>
-                                        <li>
-                                            Collaborated with designers to create pixel-perfect UIs
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Experience 3 -->
-                            <div class="timeline-item relative">
-                                <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
-                                    <h4 class="font-bold">Junior Web Developer</h4>
-                                    <p class="text-blue-500">StartUp Ventures</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                                        Jun 2016 - Feb 2018
-                                    </p>
-                                    <ul class="mt-2 list-disc list-inside text-sm">
-                                        <li>Built MVP for startup's flagship product</li>
-                                        <li>
-                                            Implemented responsive designs and frontend functionality
-                                        </li>
-                                        <li>Assisted with backend API development</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg fade-in">
-                        <h3 class="text-xl font-bold mb-6 flex items-center">
-                            <i class="fas fa-graduation-cap text-blue-500 mr-3"></i> Education
-                        </h3>
-
-                        <div class="border-l-2 border-blue-500 pl-8 relative space-y-8">
-                            <!-- Education 1 -->
-                            <div class="timeline-item relative">
-                                <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
-                                    <h4 class="font-bold">MSc Computer Science</h4>
-                                    <p class="text-blue-500">University of Technology</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                                        2014 - 2016
-                                    </p>
-                                    <p class="mt-2 text-sm">
-                                        Specialized in Software Engineering and Distributed Systems. Thesis on "Optimizing Web Application Performance Through Caching Strategies."
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Education 2 -->
-                            <div class="timeline-item relative">
-                                <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
-                                    <h4 class="font-bold">BSc Information Technology</h4>
-                                    <p class="text-blue-500">State University</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                                        2010 - 2014
-                                    </p>
-                                    <p class="mt-2 text-sm">
-                                        Graduated with First Class Honors. Active in developer student clubs and hackathons.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Responsive Web Design</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>API Development</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Database Design</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Performance Optimization</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Agile Methodologies</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <div class="md:col-span-2">
+            <div
+              class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg mb-8 fade-in"
+            >
+              <h3 class="text-xl font-bold mb-6 flex items-center">
+                <i class="fas fa-briefcase text-blue-500 mr-3"></i> Work
+                Experience
+              </h3>
+
+              <div class="border-l-2 border-blue-500 pl-8 relative space-y-8">
+                <!-- Experience 1 -->
+                <div class="timeline-item relative">
+                  <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
+                    <h4 class="font-bold">Senior Full-Stack Developer</h4>
+                    <p class="text-blue-500">JEOTehnologies
+ Hub</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      Jan 2024 - Present
+                    </p>
+                    <ul class="mt-2 list-disc list-inside text-sm">
+                      <li>
+                        Led development of enterprise SaaS platform serving
+                        50,000+ users
+                      </li>
+                      <li>
+                        Architected microservices backend improving performance
+                        by 40%
+                      </li>
+                      <li>
+                        Mentored junior developers and conducted code reviews
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item relative">
+                  <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
+                    <h4 class="font-bold">Back-End Web Developer</h4>
+                    <p class="text-blue-500">720Degree Hub</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      Jun 2023 - Feb 2024
+                    </p>
+                    <ul class="mt-2 list-disc list-inside text-sm">
+                      <li>
+                        Developed 30+ client websites and web applications
+                      </li>
+                      <li>
+                        Managed and optimized databases (MySQL, MongoDB,
+                        PostreSQL) for efficiency and reliability
+                      </li>
+                      <li>
+                        Collaborated with designers to create pixel-perfect UIs
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item relative">
+                  <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
+                    <h4 class="font-bold">Front-End Web Developer</h4>
+                    <p class="text-blue-500">720Degree Hub</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      Jun 2023 - Feb 2024
+                    </p>
+                    <ul class="mt-2 list-disc list-inside text-sm">
+                      <li>
+                        Built responsive, user-friendly website and web apps
+                        using HTML, CSS, JavaScript, and modern frameworks.
+                      </li>
+                      <li>
+                        Implemented responsive designs and frontend
+                        functionality
+                      </li>
+                      <li>Assisted with backend API development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg fade-in"
+            >
+              <h3 class="text-xl font-bold mb-6 flex items-center">
+                <i class="fas fa-graduation-cap text-blue-500 mr-3"></i>
+                Education
+              </h3>
+
+              <div class="border-l-2 border-blue-500 pl-8 relative space-y-8">
+                <!-- Education 1 -->
+                <div class="timeline-item relative">
+                  <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
+                    <h4 class="font-bold">BSc Computer Science</h4>
+                    <p class="text-blue-500">ESCAE Benin, University</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      2019 - 2023
+                    </p>
+                    <p class="mt-2 text-sm">
+                      Graduated with Second Class Honors (Upper Division).
+                      Active in all kinds of Software programming.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="timeline-item relative">
+                  <div class="bg-gray-100 dark:bg-white-800 p-4 rounded-lg">
+                    <h4 class="font-bold">SSCE</h4>
+                    <p class="text-blue-500">Gateway Secondary School</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      2003 - 2010
+                    </p>
+                    <p class="mt-2 text-sm">
+                      Graduated with strong results in Mathematics and Computer
+                      Science.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Blog Section -->
     <section id="blog" class="py-20 bg-gray-100 dark:bg-white-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16">Latest Blog Posts</h2>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">Latest Blog Posts</h2>
 
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Blog Post 1 -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="How I Built My Portfolio" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                        />
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
-                            <span>Jun 15, 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>5 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">
-                            How I Built My Portfolio Using React and Tailwind
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            A deep dive into the architecture decisions, component structure, and performance optimizations I implemented in building this portfolio site. Learn how I combined React's component model with Tailwind's utility-first approach for maximum efficiency.
-                        </p>
-                        <a href="#" class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 font-medium">
-                Read More <i class="fas fa-arrow-right ml-1"></i>
-              </a>
-                    </div>
-                </div>
-
-                <!-- Blog Post 2 -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="UI Empathy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                        />
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
-                            <span>May 28, 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>7 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">
-                            Why Full-Stack Developers Need UI Empathy
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Exploring the importance of understanding user perspectives when building interfaces, even as a backend-focused developer. This post covers practical techniques to develop UI empathy and how it leads to better overall system design.
-                        </p>
-                        <a href="#" class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 font-medium">
-                Read More <i class="fas fa-arrow-right ml-1"></i>
-              </a>
-                    </div>
-                </div>
-
-                <!-- Blog Post 3 -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Learning by Building" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                        />
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
-                            <span>Apr 10, 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>8 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">
-                            Learning by Building: My Favorite Real-World Projects
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Reflecting on the projects that taught me the most about web development. From my first CRUD app to complex distributed systems, I share the key lessons learned from each project and how they shaped my approach to problem-solving.
-                        </p>
-                        <a href="#" class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 font-medium">
-                Read More <i class="fas fa-arrow-right ml-1"></i>
-              </a>
-                    </div>
-                </div>
-
-                <!-- Blog Post 4 -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Code Quality" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                        />
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
-                            <span>Mar 22, 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>6 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">
-                            Maintaining Code Quality in Fast-Paced Development
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Strategies for keeping code clean and maintainable even under tight deadlines. This post covers practical techniques like code reviews, automated testing, and architectural patterns that help balance speed and quality in professional development environments.
-                        </p>
-                        <a href="#" class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 font-medium">
-                Read More <i class="fas fa-arrow-right ml-1"></i>
-              </a>
-                    </div>
-                </div>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Blog Post 1 -->
+          <div
+            class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="How I Built My Portfolio"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
             </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2"
+              >
+                <span>Jun 15, 2023</span>
+                <span class="mx-2">•</span>
+                <span>5 min read</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                How I Built My Portfolio Using React and Tailwind
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                A deep dive into the architecture decisions, component
+                structure, and performance optimizations I implemented in
+                building this portfolio site. Learn how I combined React's
+                component model with Tailwind's utility-first approach for
+                maximum efficiency.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 font-medium"
+              >
+                Read More <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
 
-            <div class="text-center mt-12 fade-in">
-                <a href="#" class="inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 shadow-lg">
+          <!-- Blog Post 2 -->
+          <div
+            class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="UI Empathy"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2"
+              >
+                <span>May 28, 2023</span>
+                <span class="mx-2">•</span>
+                <span>7 min read</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                Why Full-Stack Developers Need UI Empathy
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Exploring the importance of understanding user perspectives when
+                building interfaces, even as a backend-focused developer. This
+                post covers practical techniques to develop UI empathy and how
+                it leads to better overall system design.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 font-medium"
+              >
+                Read More <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog Post 3 -->
+          <div
+            class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Learning by Building"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2"
+              >
+                <span>Apr 10, 2023</span>
+                <span class="mx-2">•</span>
+                <span>8 min read</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                Learning by Building: My Favorite Real-World Projects
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Reflecting on the projects that taught me the most about web
+                development. From my first CRUD app to complex distributed
+                systems, I share the key lessons learned from each project and
+                how they shaped my approach to problem-solving.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 font-medium"
+              >
+                Read More <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog Post 4 -->
+          <div
+            class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg fade-in"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Code Quality"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2"
+              >
+                <span>Mar 22, 2023</span>
+                <span class="mx-2">•</span>
+                <span>6 min read</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                Maintaining Code Quality in Fast-Paced Development
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Strategies for keeping code clean and maintainable even under
+                tight deadlines. This post covers practical techniques like code
+                reviews, automated testing, and architectural patterns that help
+                balance speed and quality in professional development
+                environments.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 font-medium"
+              >
+                Read More <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12 fade-in">
+          <a
+            href="#"
+            class="inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 shadow-lg"
+          >
             View All Blog Posts
           </a>
-            </div>
         </div>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16">What People Say</h2>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">What People Say</h2>
 
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg fade-in">
-                        <div class="flex items-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4" />
-                            <div>
-                                <h4 class="font-bold">Sarah Johnson</h4>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">
-                                    CTO at TechSolutions Inc.
-                                </p>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            "Jones transformed our legacy system into a modern, scalable platform. His deep understanding of both frontend and backend technologies allowed him to make architectural decisions that improved performance by 40%. He's not just a developer but a true
-                            problem-solver."
-                        </p>
-                        <div class="mt-4 flex text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg fade-in">
-                        <div class="flex items-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover mr-4" />
-                            <div>
-                                <h4 class="font-bold">Michael Chen</h4>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">
-                                    Product Manager at DigitalAgency
-                                </p>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            "Working with Jones was a game-changer for our team. He consistently delivered high-quality code on time and was always willing to go the extra mile to ensure the best user experience. His ability to communicate technical concepts to non-technical stakeholders
-                            was particularly valuable."
-                        </p>
-                        <div class="mt-4 flex text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="testimonial-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg fade-in">
-                        <div class="flex items-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="David Rodriguez" class="w-12 h-12 rounded-full object-cover mr-4" />
-                            <div>
-                                <h4 class="font-bold">David Rodriguez</h4>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">
-                                    CEO at StartUp Ventures
-                                </p>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            "Jones built the MVP that helped us secure our Series A funding. His technical expertise and product mindset were instrumental in creating a solution that not only worked well but also delighted our early users. I would hire him again in a heartbeat for
-                            any technical challenge."
-                        </p>
-                        <div class="mt-4 flex text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div
+              class="testimonial-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg fade-in"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                  alt="Sarah Johnson"
+                  class="w-12 h-12 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 class="font-bold">Isaiah Victor Onuabuchi</h4>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    CTO at TechSolutions Inc.
+                  </p>
                 </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                "Jones transformed our legacy system into a modern, scalable
+                platform. His deep understanding of both frontend and backend
+                technologies allowed him to make architectural decisions that
+                improved performance by 40%. He's not just a developer but a
+                true problem-solver."
+              </p>
+              <div class="mt-4 flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
             </div>
+
+            <!-- Testimonial 2 -->
+            <div
+              class="testimonial-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg fade-in"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                  alt="Michael Chen"
+                  class="w-12 h-12 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 class="font-bold">Adefala Esther</h4>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    Product Manager at DigitalAgency
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                "Working with Jones was a game-changer for our team. He
+                consistently delivered high-quality code on time and was always
+                willing to go the extra mile to ensure the best user experience.
+                His ability to communicate technical concepts to non-technical
+                stakeholders was particularly valuable."
+              </p>
+              <div class="mt-4 flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div
+              class="testimonial-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg fade-in"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                  alt="David Rodriguez"
+                  class="w-12 h-12 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 class="font-bold">Jones Gift Oluchi</h4>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    CEO at StartUp Ventures
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                "Jones built the MVP that helped us secure our Series A funding.
+                His technical expertise and product mindset were instrumental in
+                creating a solution that not only worked well but also delighted
+                our early users. I would hire him again in a heartbeat for any
+                technical challenge."
+              </p>
+              <div class="mt-4 flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-100 dark:bg-white-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16">Get In Touch</h2>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">Get In Touch</h2>
 
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="fade-in">
-                    <h3 class="text-xl font-bold mb-6">Let's Work Together</h3>
-                    <p class="mb-6">
-                        I'm currently open to new opportunities, whether it's freelance projects, contract work, or full-time positions. If you have a project that needs creative solutions, feel free to reach out!
-                    </p>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="fade-in">
+            <h3 class="text-xl font-bold mb-6">Let's Work Together</h3>
+            <p class="mb-6">
+              I'm currently open to new opportunities, whether it's freelance
+              projects, contract work, or full-time positions. If you have a
+              project that needs creative solutions, feel free to reach out!
+            </p>
 
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope text-blue-500 mr-4 text-xl"></i>
-                            <span>jonestobi8@gmail.com</span>
-                            <!-- <span>senojtech.vercel.app</span> -->
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-phone text-blue-500 mr-4 text-xl"></i>
-                            <span>+234-811-632-4846</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-blue-500 mr-4 text-xl"></i>
-                            <span>Lagos, Nigeria</span>
-                        </div>
-                    </div>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i class="fas fa-envelope text-blue-500 mr-4 text-xl"></i>
+                <span>jonestobi8@gmail.com</span>
+                <!-- <span>JEOTehnologies.vercel.app</span> -->
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone text-blue-500 mr-4 text-xl"></i>
+                <span>+234-811-632-4846</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt text-blue-500 mr-4 text-xl"></i>
+                <span>Lagos, Nigeria</span>
+              </div>
+            </div>
 
-                    <div class="mt-8">
-                        <h4 class="font-bold mb-4">Connect With Me</h4>
-                        <div class="flex space-x-4">
-                            <a href="https://github.com/jonesima" target="_blank" class="external-link w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition duration-300">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/jones-emmanuel-4b08861bb/" target="_blank" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition duration-300">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://x.com/AMYJONES1331" target="_blank" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition duration-300">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://web.facebook.com/profile.php?id=100082169281417" target="_blank" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition duration-300">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="mt-8">
+              <h4 class="font-bold mb-4">Connect With Me</h4>
+              <div class="flex space-x-4">
+                <a
+                  href="https://github.com/jonesima"
+                  target="_blank"
+                  class="external-link w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition duration-300"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jones-emmanuel-4b08861bb/"
+                  target="_blank"
+                  class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition duration-300"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://x.com/AMYJONES1331"
+                  target="_blank"
+                  class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition duration-300"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://web.facebook.com/profile.php?id=100082169281417"
+                  target="_blank"
+                  class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition duration-300"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                <div class="fade-in">
-                    <form id="contact-form" class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
-                        <div class="mb-4">
-                            <label for="name" class="block text-sm font-medium mb-2">Your Name</label
+          <div class="fade-in">
+            <form
+              id="contact-form"
+              class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg"
+            >
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium mb-2"
+                  >Your Name</label
                 >
                 <input
                   type="text"
@@ -1066,7 +1318,7 @@
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="mb-6 md:mb-0">
             <a href="#home" class="text-2xl font-bold">
-              <span class="text-blue-400">Senoj</span>Tech
+              <span class="text-blue-400">JEO</span>Tech
             </a>
             <p class="mt-2 text-gray-400">Full-Stack Developer</p>
           </div>
@@ -1099,7 +1351,8 @@
               </a>
             </div>
             <p class="text-gray-400 text-sm">
-              &copy; 2023 SenojTech. All rights reserved.
+              &copy; 2023 JEOTehnologies
+. All rights reserved.
             </p>
           </div>
         </div>
